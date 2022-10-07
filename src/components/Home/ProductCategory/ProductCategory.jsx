@@ -1,12 +1,14 @@
 import React from "react";
 import { FaGlassCheers } from "react-icons/fa";
 import Img1 from "../../../assets/img/cat-p1.png";
+import Img2 from "../../../assets/img/cat-p2.png";
+import Img3 from "../../../assets/img/cat-p3.png";
 
 const ProductCategory = () => {
   return (
-    <section className="w-[85%] mx-auto py-12">
+    <section className="w-[85%] mx-auto py-12" id="ourCategory">
       <h2
-        className="text-[4rem] font-primary font-extrabold text-title text-center uppercase
+        className="text-[6rem] font-title  text-title text-center capitalize
       mb-4"
       >
         <FaGlassCheers className="inline mr-2 text-[4rem]" />
@@ -19,7 +21,7 @@ const ProductCategory = () => {
             <div className="flex justify-center">
               <img src={Img1} alt="" className="w-[80%]" />
             </div>
-            <h4 className="text-5xl font-primary font-extrabold text-black text-center">
+            <h4 className="text-[2.25rem] sm:text-5xl font-primary font-extrabold text-black text-center">
               VIN & ALCOOL
             </h4>
             <a
@@ -33,9 +35,9 @@ const ProductCategory = () => {
         <div className="bg-heroBg rounded-2xl max-w-[27rem]">
           <div className="bg-[#bfdd0080] p-6  rounded-2xl flex flex-col items-center justify-center gap-8 min-h-[38rem]">
             <div className="flex justify-center">
-              <img src={Img1} alt="" className="w-[80%]" />
+              <img src={Img2} alt="" className="w-[80%]" />
             </div>
-            <h4 className="text-5xl font-primary font-extrabold text-black text-center">
+            <h4 className="text-[2.25rem] sm:text-5xl font-primary font-extrabold text-black text-center">
               BIÈRE & COCKTAILS
             </h4>
             <a
@@ -49,9 +51,9 @@ const ProductCategory = () => {
         <div className="bg-heroBg rounded-2xl max-w-[27rem]">
           <div className="bg-[#bfdd0080] p-6  rounded-2xl flex flex-col items-center justify-center gap-8 min-h-[38rem]">
             <div className="flex justify-center">
-              <img src={Img1} alt="" className="w-[80%]" />
+              <img src={Img3} alt="" className="w-[80%]" />
             </div>
-            <h4 className="text-5xl font-primary font-extrabold text-black text-center">
+            <h4 className="text-[2.25rem] sm:text-5xl font-primary font-extrabold text-black text-center">
               BREUVAGE & LE CASSE-CROÛTE
             </h4>
             <a

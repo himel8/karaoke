@@ -3,14 +3,14 @@ import { FaGlassCheers, FaTelegramPlane } from "react-icons/fa";
 
 const Newslatter = () => {
   return (
-    <div className="w-[80%] mx-auto bg-heroBg mt-6 rounded-tl-[4.2rem] rounded-br-[4.2rem]">
-      <div className="bg-hero flex justify-center items-center py-16 px-10 gap-10 ">
+    <div className="w-[95%] sm:w-[80%] mx-auto bg-heroBg mt-6 rounded-tl-[4.2rem] rounded-br-[4.2rem]">
+      <div className="bg-hero flex justify-center items-center py-16 sm:px-10 px-4 gap-10 md:flex-nowrap flex-wrap">
         <div className="w-full">
-          <h6 className="text-lg font-medium font-text text-title mb-2">
+          <h6 className="text-3xl font-medium font-title text-title mb-2">
             <FaGlassCheers className="inline mr-2 text-2xl " />
-            OUR NEWLETTER
+            Our Newletter
           </h6>
-          <h2 className="text-4xl font-primary font-bold text-white tracking-wide">
+          <h2 className="text-3xl sm:text-4xl font-primary font-bold text-white tracking-wide">
             GET THE UPDATED NEWS
           </h2>
         </div>

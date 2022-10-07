@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         primary: "'Raleway', sans-serif",
         text: "'Manrope', sans-serif",
+        title: "'Dancing Script', cursive",
       },
       backgroundSize: {
         full: "100% 100%",
@@ -20,6 +21,22 @@ module.exports = {
         // title: "#231f20",
 
         main: "#e03270",
+      },
+      screens: {
+        navBreak: "1120px",
+        navBreak2: "1250px",
+        custom: "1100px",
+      },
+
+      animation: {
+        wiggle: "wiggle 2.5s linear infinite",
+      },
+      keyframes: {
+        wiggle: {
+          "0%,50%, 100%": { transform: "translateY(0)" },
+          "25%": { transform: "translateY(-20px)" },
+          "75%": { transform: "translateY(20px)" },
+        },
       },
     },
   },

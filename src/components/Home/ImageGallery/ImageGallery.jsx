@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaGlassCheers } from "react-icons/fa";
 import Img1 from "../../../assets/img/img-gallery/img1.png";
 import Img10 from "../../../assets/img/img-gallery/img10.png";
 import Img11 from "../../../assets/img/img-gallery/img11.png";
@@ -64,47 +65,59 @@ const ImageGallery = () => {
 
   // end
   return (
-    <div id="scrolling" className="about-2-images-wrap pt-20 -rotate-[3.95deg]">
-      {/* 2nd part */}
-      <div
-        style={{
-          transform: `translate3d(${
-            get - 4
-          }%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`,
-          transition: "all 0.7s ease-out",
-        }}
-        className="about-2-images-line"
+    <section id="gallery" className="py-28">
+      <h2
+        className="text-[6rem] font-title  text-title text-center capitalize
+      mb-4"
       >
-        {first.map((data, index) => (
-          <img
-            key={index}
-            src={data.link}
-            alt=""
-            className="about-2-image-line-item"
-          />
-        ))}
-      </div>
+        <FaGlassCheers className="inline mr-2 text-[4rem]" />
+        Gallery
+      </h2>
+      <div
+        id="scrolling"
+        className="about-2-images-wrap pt-20 -rotate-[3.95deg]"
+      >
+        {/* 2nd part */}
+        <div
+          style={{
+            transform: `translate3d(${
+              get * 0.3 - 15
+            }%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`,
+            transition: "all 0.7s ease-out",
+          }}
+          className="about-2-images-line"
+        >
+          {first.map((data, index) => (
+            <img
+              key={index}
+              src={data.link}
+              alt=""
+              className="about-2-image-line-item border border-main rounded-xl bg-[#bdcd5f]"
+            />
+          ))}
+        </div>
 
-      {/* 2nd part */}
-      <div
-        style={{
-          transform: `translate3d(${
-            -get * 0.5 - 5
-          }%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`,
-          transition: "all 0.7s ease-out",
-        }}
-        className="about-2-images-line"
-      >
-        {second.map((data, index) => (
-          <img
-            key={index}
-            src={data.link}
-            alt=""
-            className="about-2-image-line-item"
-          />
-        ))}
+        {/* 2nd part */}
+        <div
+          style={{
+            transform: `translate3d(${
+              -get * 0.3 - 15
+            }%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`,
+            transition: "all 0.7s ease-out",
+          }}
+          className="about-2-images-line"
+        >
+          {second.map((data, index) => (
+            <img
+              key={index}
+              src={data.link}
+              alt=""
+              className="about-2-image-line-item border border-main rounded-xl bg-[#bdcd5f]"
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

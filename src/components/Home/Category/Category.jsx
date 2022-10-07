@@ -5,15 +5,15 @@ import { timeData } from "./categoryData";
 
 const Category = () => {
   return (
-    <section className="py-12">
-      <h2 className="text-[4rem] font-primary font-extrabold text-title text-center">
+    <section className="py-12" id="times">
+      <h2 className="text-[3.5rem] leading-[4.2rem] sm:text-[6rem] font-title text-title text-center">
         <FaGlassCheers className="inline mr-2 text-[4rem]" />
-        FORFAIT CHAMBRE
+        Forfait Chambre
       </h2>
       {timeData.map((data, index) => (
         <div
           key={index}
-          className="w-[80%] mx-auto flex flex-col justify-center items-center my-12"
+          className="w-[95%] sm:w-[80%] mx-auto flex flex-col justify-center items-center my-12"
         >
           <div className="flex flex-col  justify-center items-center gap-4 pb-6">
             <div>
@@ -27,13 +27,13 @@ const Category = () => {
           </div>
 
           {/*  */}
-          <div className="flex justify-center items-center gap-10 lg:flex-nowrap flex-wrap">
+          <div className="flex justify-center items-center gap-10 lg:flex-nowrap flex-wrap px-4">
             {data.category.map((data, index) => (
               <div
                 key={index}
-                className="bg-heroBg rounded-2xl w-[50%] mx-auto"
+                className="bg-heroBg rounded-2xl w-full lg:w-[50%] mx-auto"
               >
-                <div className="bg-hero flex flex-col justify-center items-center px-12 py-6 gap-4">
+                <div className="bg-hero flex flex-col justify-center items-center px-4 sm:px-12 py-6 gap-4">
                   <h3 className="font-primary text-3xl font-bold text-center text-white">
                     {data.name}
                   </h3>
@@ -50,7 +50,7 @@ const Category = () => {
                         {data.name}
                       </p>
 
-                      <hr className="w-80 border border-dashed border-title" />
+                      <hr className="w-20 sm:w-80 border border-dashed border-title" />
 
                       <p className="text-2xl font-text font-bold">
                         {data.amount}
