@@ -55,7 +55,9 @@ const Header = () => {
     <>
       <header
         className={`z-[100] w-full ${
-          isVisible ? "bg-white fixed shadow-2xl" : "bg-transparent absolute"
+          isVisible
+            ? "bg-[#c8d869] fixed shadow-2xl"
+            : "bg-transparent absolute"
         } duration-500`}
       >
         <div className="py-6 px-4 lgC:w-[80%] sm:w-[90%] w-[98%] m-auto">
@@ -152,7 +154,7 @@ const Header = () => {
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
           >
-            <div className="relative flex w-full max-w-xs flex-1 flex-col bg-white pt-5 pb-4">
+            <div className="relative flex w-full max-w-xs flex-1 flex-col bg-[#c8d869] pt-5 pb-4">
               <Transition.Child
                 as={Fragment}
                 enter="ease-in-out duration-300"

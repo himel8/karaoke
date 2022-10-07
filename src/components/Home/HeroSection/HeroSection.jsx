@@ -22,7 +22,7 @@ const HeroSection = () => {
             <div className="flex justify-center lg:justify-start items-center gap-6 flex-wrap">
               <a
                 href="#!"
-                className="bg-title text-[#802727] text-xl font-bold font-text px-7 py-3 rounded-tl-3xl rounded-br-3xl"
+                className="bg-title hover:bg-simple hover:text-title text-[#802727] hover:scale-105 transform transition-all ease-in-out duration-700 text-xl font-bold font-text px-7 py-3 rounded-tl-3xl rounded-br-3xl "
               >
                 Contact Us
               </a>

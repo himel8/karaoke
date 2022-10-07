@@ -26,7 +26,7 @@ const ProductCategory = () => {
             </h4>
             <a
               href="#vin-alcool"
-              className="bg-main text-title text-xl font-bold font-text px-7 py-3 rounded-tl-3xl rounded-br-3xl"
+              className=" bg-simple text-title hover:scale-105 transform transition-all ease-in-out duration-700 text-xl font-bold font-text px-7 py-3 rounded-tl-3xl rounded-br-3xl"
             >
               See More
             </a>
@@ -42,7 +42,7 @@ const ProductCategory = () => {
             </h4>
             <a
               href="#!"
-              className="bg-main text-title text-xl font-bold font-text px-7 py-3 rounded-tl-3xl rounded-br-3xl"
+              className="bg-simple text-title hover:scale-105 transform transition-all ease-in-out duration-700 text-xl font-bold font-text px-7 py-3 rounded-tl-3xl rounded-br-3xl"
             >
               See More
             </a>
@@ -58,7 +58,7 @@ const ProductCategory = () => {
             </h4>
             <a
               href="#!"
-              className="bg-main text-title text-xl font-bold font-text px-7 py-3 rounded-tl-3xl rounded-br-3xl"
+              className="bg-simple text-title hover:scale-105 transform transition-all ease-in-out duration-700 text-xl font-bold font-text px-7 py-3 rounded-tl-3xl rounded-br-3xl"
             >
               See More
             </a>
