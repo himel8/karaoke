@@ -19,11 +19,15 @@ const Category = () => {
             <div>
               <img src={data.img} alt="" className="w-40" />
             </div>
-            <h3 className="text-5xl font-primary font-extrabold">
+            <h3 className="text-5xl font-primary font-extrabold text-white">
               {data.name}
             </h3>
-            <p className="text-2xl font-text font-bold">{data.time}</p>
-            <h3 className="text-4xl font-primary font-bold">{data.chname}</h3>
+            <p className="text-2xl font-text font-bold text-simple">
+              {data.time}
+            </p>
+            <h3 className="text-4xl font-primary font-bold text-title">
+              {data.chname}
+            </h3>
           </div>
 
           {/*  */}
@@ -46,13 +50,13 @@ const Category = () => {
                       className="flex justify-start items-center gap-2 "
                     >
                       <BsFillArrowRightCircleFill className="text-xl text-title" />
-                      <p className="text-2xl font-text font-bold">
+                      <p className="text-2xl font-text font-bold text-white">
                         {data.name}
                       </p>
 
                       <hr className="w-20 sm:w-80 border border-dashed border-title" />
 
-                      <p className="text-2xl font-text font-bold">
+                      <p className="text-2xl font-text font-bold text-white">
                         {data.amount}
                       </p>
                     </div>

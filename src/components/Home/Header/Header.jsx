@@ -89,9 +89,12 @@ const Header = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <a href="tel:514-661-1695" className="hover:underline">
+                <a
+                  href="tel:514-661-1695"
+                  className="hover:underline hover:text-simple hover:scale-[1.05] transform transition-all ease-in-out duration-700"
+                >
                   <div className="flex gap-2 items-center">
-                    <BsTelephoneFill className=" text-lg md:text-2xl hover:text-main hover:scale-125 transform transition-all ease-in-out duration-700" />
+                    <BsTelephoneFill className=" text-lg md:text-2xl " />
                     <p className="text-lg md:text-2xl font-text font-extrabold">
                       514-661-1695
                     </p>

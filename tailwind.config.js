@@ -16,11 +16,11 @@ module.exports = {
         footerBg: "url('./assets/img/footerBg2.jpg')",
       },
       colors: {
-        hero: "#e03270bf",
+        hero: "#231f25cc",
         title: "#bfdd00",
-        // title: "#231f20",
+        simple: "#e03270",
 
-        main: "#e03270",
+        main: "#231f20",
       },
       screens: {
         navBreak: "1120px",

@@ -14,13 +14,17 @@ const ProductCard = () => {
           <div className="flex justify-start items-center gap-3 ">
             <BsFillArrowRightCircleFill className="text-xl text-title" />
             <div>
-              <p className="text-xl font-text font-bold">St-Rémy X.O 750ml</p>
-              <p className="text-xl font-text font-bold">圣雷米白兰地 X.O</p>
+              <p className="text-xl font-text font-bold text-white">
+                St-Rémy X.O 750ml
+              </p>
+              <p className="text-xl font-text font-bold text-simple">
+                圣雷米白兰地 X.O
+              </p>
             </div>
 
             <hr className="w-28 sm:w-80 border border-dashed border-title" />
 
-            <p className="text-xl font-text font-bold">$120</p>
+            <p className="text-xl font-text font-bold text-white">$120</p>
           </div>
         </div>
       </div>
