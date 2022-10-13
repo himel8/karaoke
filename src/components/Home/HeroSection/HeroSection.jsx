@@ -5,7 +5,7 @@ import HeroImg from "../../../assets/img/heroimg.png";
 
 const HeroSection = () => {
   return (
-    <section className="bg-heroBg" id="home">
+    <section className="" id="home">
       <div className=" bg-hero min-h-screen flex justify-center items-center ">
         <div className="flex justify-center items-center w-[95%] sm:w-[80%] mx-auto gap-10 lg:flex-nowrap flex-wrap-reverse py-20 lg:py-0 pt-0 lg:pt-20">
           <div className="flex flex-col gap-8">

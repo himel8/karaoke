@@ -1,6 +1,6 @@
 import React from "react";
-import Img from "../../../assets/img/hand.png";
 import Key from "../../../assets/img/key-bg.png";
+import Img from "../../../assets/img/KTVBAR.jpeg";
 import Event from "./Event";
 
 const aboutData = [
@@ -32,8 +32,8 @@ const About = () => {
       className="min-h-screen flex justify-center items-center flex-col gap-8 py-10"
       id="about"
     >
-      <div className="flex justify-center items-center gap-24 md:flex-nowrap flex-wrap">
-        <div className="w-full md:w-1/2 sm:ml-[5rem] lg:ml-[10rem] flex flex-col gap-8 px-6">
+      <div className="flex justify-center items-center gap-24 md:flex-nowrap flex-wrap-reverse w-[95%] md:w-[80%] mx-auto">
+        <div className="w-full md:w-1/2 flex flex-col gap-8 px-6">
           <h4 className="font-title text-6xl text-title ">Welcome!</h4>
           <h3 className="font-primary text-4xl text-white uppercase font-medium tracking-wider">
             MAKING THE BEST BEER POSSIBLE
@@ -45,8 +45,8 @@ const About = () => {
             nuyfasas. Vertyu erauas aitaesa ertyasneo eniptaiades.
           </p>
         </div>
-        <div className="w-1/2 md:block hidden">
-          <img src={Img} alt="" className="w-full animate-wiggle" />
+        <div className="w-full md:w-1/2">
+          <img src={Img} alt="" className="w-full" />
         </div>
       </div>
 

@@ -105,7 +105,7 @@ const ImageGallery = () => {
             }%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`,
             transition: "all 0.7s ease-out",
           }}
-          className="about-2-images-line"
+          className="about-2-images-line min-w-[20rem]"
         >
           {second.map((data, index) => (
             <img
