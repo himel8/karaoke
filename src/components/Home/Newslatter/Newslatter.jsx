@@ -25,7 +25,7 @@ const Newslatter = () => {
             class="bg-title hover:bg-simple text-[#802727] hover:text-title hover:scale-105 transform transition-all ease-in-out duration-700 font-bold py-2 px-4 rounded-br-3xl focus:outline-none focus:shadow-outline min-w-[6.5rem] flex justify-center items-center text-3xl"
             type="button"
           >
-            <FaTelegramPlane />
+            <FaTelegramPlane className="text-white" />
           </button>
         </div>
       </div>

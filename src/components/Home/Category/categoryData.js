@@ -1,5 +1,5 @@
 import Img1 from "../../../assets/img/cat-1.png";
-import Img2 from "../../../assets/img/cat-2.jpg";
+import Img2 from "../../../assets/img/cat-2.png";
 
 export const timeData = [
   {

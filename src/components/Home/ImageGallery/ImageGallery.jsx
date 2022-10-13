@@ -61,7 +61,7 @@ const ImageGallery = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const get = (offsetY * 0.3 - 110) / 10;
+  const get = (offsetY * 0.15 - 850) / 2;
 
   // end
   return (
@@ -92,7 +92,7 @@ const ImageGallery = () => {
               key={index}
               src={data.link}
               alt=""
-              className="about-2-image-line-item border border-main rounded-xl bg-[#bdcd5f]"
+              className="about-2-image-line-item border border-main rounded-xl bg-hero"
             />
           ))}
         </div>
@@ -105,14 +105,14 @@ const ImageGallery = () => {
             }%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`,
             transition: "all 0.7s ease-out",
           }}
-          className="about-2-images-line min-w-[20rem]"
+          className="about-2-images-line "
         >
           {second.map((data, index) => (
             <img
               key={index}
               src={data.link}
               alt=""
-              className="about-2-image-line-item border border-main rounded-xl bg-[#bdcd5f]"
+              className="about-2-image-line-item border border-main rounded-xl bg-hero"
             />
           ))}
         </div>

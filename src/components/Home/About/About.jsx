@@ -1,6 +1,7 @@
 import React from "react";
 import Key from "../../../assets/img/key-bg.png";
-import Img from "../../../assets/img/KTVBAR.jpeg";
+import Img2 from "../../../assets/img/KTV-9.jpeg";
+import Img1 from "../../../assets/img/KTVBAR.jpeg";
 import Event from "./Event";
 
 const aboutData = [
@@ -26,28 +27,53 @@ const aboutData = [
   },
 ];
 
+const aboutDesc = [
+  {
+    id: 1,
+    heading: "Welcome!",
+    title: "MAKING THE BEST BEER POSSIBLE",
+    desc: "Beciegast nveriti vitaesaert asety kertya aset aplicaboserde nerorem asipsumod itaut. Monsequntur magni dolores eonqui ratione voluptate msequise kertyias nesciunt, neque porro quisquam seridolore nuyfasas. Vertyu erauas aitaesa ertyasneo eniptaiades.",
+    img: Img1,
+  },
+  {
+    id: 2,
+    heading: "Welcome!",
+    title: "Wish you were here",
+    desc: "Beciegast nveriti vitaesaert asety kertya aset aplicaboserde nerorem asipsumod itaut. Monsequntur magni dolores eonqui ratione voluptate msequise kertyias nesciunt, neque porro quisquam seridolore nuyfasas. Vertyu erauas aitaesa ertyasneo eniptaiades.",
+    img: Img2,
+  },
+];
+
 const About = () => {
   return (
     <section
       className="min-h-screen flex justify-center items-center flex-col gap-8 py-10"
       id="about"
     >
-      <div className="flex justify-center items-center gap-24 md:flex-nowrap flex-wrap-reverse w-[95%] md:w-[80%] mx-auto">
-        <div className="w-full md:w-1/2 flex flex-col gap-8 px-6">
-          <h4 className="font-title text-6xl text-title ">Welcome!</h4>
-          <h3 className="font-primary text-4xl text-white uppercase font-medium tracking-wider">
-            MAKING THE BEST BEER POSSIBLE
-          </h3>
-          <p className="font-text text-xl text-white ">
-            Beciegast nveriti vitaesaert asety kertya aset aplicaboserde nerorem
-            asipsumod itaut. Monsequntur magni dolores eonqui ratione voluptate
-            msequise kertyias nesciunt, neque porro quisquam seridolore
-            nuyfasas. Vertyu erauas aitaesa ertyasneo eniptaiades.
-          </p>
-        </div>
-        <div className="w-full md:w-1/2">
-          <img src={Img} alt="" className="w-full" />
-        </div>
+      <div>
+        {aboutDesc.map((data, index) => (
+          <div
+            key={index}
+            className={`flex justify-center items-center gap-24 md:flex-nowrap ${
+              index % 2 === 0
+                ? "flex-wrap-reverse md:flex-row"
+                : "flex-wrap md:flex-row-reverse"
+            }  w-[95%] md:w-[80%] mx-auto my-12`}
+          >
+            <div className="w-full md:w-1/2 flex flex-col gap-8 px-6">
+              <h4 className="font-title text-6xl text-title ">
+                {data.heading}
+              </h4>
+              <h3 className="font-primary text-4xl text-white uppercase font-medium tracking-wider">
+                {data.title}
+              </h3>
+              <p className="font-text text-xl text-white ">{data.desc}</p>
+            </div>
+            <div className="w-full md:w-1/2">
+              <img src={data.img} alt="" className="w-full" />
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* 2nd */}

@@ -6,7 +6,7 @@ import HeroImg from "../../../assets/img/heroimg.png";
 const HeroSection = () => {
   return (
     <section className="" id="home">
-      <div className=" bg-hero min-h-screen flex justify-center items-center ">
+      <div className=" bg-main min-h-screen flex justify-center items-center ">
         <div className="flex justify-center items-center w-[95%] sm:w-[80%] mx-auto gap-10 lg:flex-nowrap flex-wrap-reverse py-20 lg:py-0 pt-0 lg:pt-20">
           <div className="flex flex-col gap-8">
             <h6 className="text-2xl sm:text-3xl font-medium font-title text-title text-center lg:text-left capitalize">
@@ -22,7 +22,7 @@ const HeroSection = () => {
             <div className="flex justify-center lg:justify-start items-center gap-6 flex-wrap">
               <a
                 href="#!"
-                className="bg-title hover:bg-simple hover:text-title text-[#802727] hover:scale-105 transform transition-all ease-in-out duration-700 text-xl font-bold font-text px-7 py-3 rounded-tl-3xl rounded-br-3xl "
+                className="bg-title hover:bg-white hover:text-title text-white hover:scale-105 transform transition-all ease-in-out duration-700 text-xl font-bold font-text px-7 py-3 rounded-tl-3xl rounded-br-3xl "
               >
                 Contact Us
               </a>

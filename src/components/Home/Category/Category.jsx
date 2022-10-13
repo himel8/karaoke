@@ -41,7 +41,7 @@ const Category = () => {
                   <h3 className="font-primary text-3xl font-bold text-center text-white">
                     {data.name}
                   </h3>
-                  <p className="font-text text-lg font-semibold text-title text-center">
+                  <p className="font-text text-lg font-semibold text-simple text-center">
                     {data.desc}
                   </p>
                   {data.price.map((data, index) => (
@@ -70,7 +70,7 @@ const Category = () => {
       <div className="flex justify-center items-center">
         <a
           href="tel:514-661-1695"
-          className="bg-title hover:bg-simple hover:text-title text-[#802727] hover:scale-105 transform transition-all ease-in-out duration-700 text-xl font-bold font-text px-7 py-4 rounded-tl-3xl rounded-br-3xl"
+          className="bg-title hover:bg-white hover:text-title text-white hover:scale-105 transform transition-all ease-in-out duration-700 text-xl font-bold font-text px-7 py-4 rounded-tl-3xl rounded-br-3xl"
         >
           Réservations/预约电话
         </a>

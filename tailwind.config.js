@@ -6,7 +6,7 @@ module.exports = {
       fontFamily: {
         primary: "'Raleway', sans-serif",
         text: "'Manrope', sans-serif",
-        title: "'Dancing Script', cursive",
+        title: "'Russo One', sans-serif",
       },
       backgroundSize: {
         full: "100% 100%",
@@ -17,7 +17,7 @@ module.exports = {
       },
       colors: {
         hero: "#2d2d2d",
-        title: "#bfdd00",
+        title: "#d43538",
         simple: "#e03270",
 
         main: "#1c1c1c",

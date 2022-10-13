@@ -11,14 +11,14 @@ import Img from "../../../assets/img/logo.png";
 const Footer = () => {
   return (
     <section className="bg-heroBg ">
-      <div className="bg-[#bfdd0080]">
+      <div className="bg-hero text-white">
         <div className="py-10 w-[95%] sm:w-[80%] mx-auto flex justify-center items-center gap-20 flex-wrap">
           {/* 1st div */}
           <div>
             <div>
               <img src={Img} alt="" />
             </div>
-            <h6 className="text-2xl font-primary font-extrabold">
+            <h6 className="text-2xl text-title font-primary font-extrabold">
               KARAOKE LOUNGE
             </h6>
           </div>
@@ -26,7 +26,7 @@ const Footer = () => {
           {/* 2nd div */}
           <div className="flex flex-col gap-6">
             <div>
-              <h6 className="text-2xl font-primary font-extrabold">
+              <h6 className="text-2xl font-primary font-extrabold text-title">
                 HAPPY HOUR
               </h6>
               <p className="text-xl font-text font-extrabold">
@@ -34,7 +34,7 @@ const Footer = () => {
               </p>
             </div>
             <div>
-              <h6 className="text-2xl font-primary font-extrabold">
+              <h6 className="text-2xl font-primary font-extrabold text-title">
                 LES SOIRÉES
               </h6>
               <p className="text-xl font-text font-extrabold">
@@ -45,7 +45,7 @@ const Footer = () => {
 
           {/* 3rd div */}
           <div>
-            <h6 className="text-2xl font-primary font-extrabold">
+            <h6 className="text-2xl font-primary font-extrabold text-title">
               Quick Links
             </h6>
             <div className="flex flex-col gap-2">
@@ -79,7 +79,7 @@ const Footer = () => {
           {/* 4th div */}
           <div className="flex flex-col gap-6">
             <div>
-              <h6 className="text-2xl font-primary font-extrabold mb-1">
+              <h6 className="text-2xl font-primary font-extrabold mb-1 text-title">
                 Réservation
               </h6>
               <a href="tel:514-661-1695" className="hover:underline">
@@ -92,7 +92,7 @@ const Footer = () => {
               </a>
             </div>
             <div>
-              <h6 className="text-2xl font-primary font-extrabold mb-1">
+              <h6 className="text-2xl font-primary font-extrabold mb-1 text-title">
                 Social Links
               </h6>
               <div className="flex gap-4">
