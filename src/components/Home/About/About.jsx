@@ -78,7 +78,7 @@ const About = () => {
 
       {/* 2nd */}
 
-      <div className="w-[95%] sm:w-[80%] mx-auto">
+      <div className="w-[95%] md:w-[80%] mx-auto">
         <h4 className="font-title text-6xl text-title text-center my-8">
           Jz In Reality
         </h4>

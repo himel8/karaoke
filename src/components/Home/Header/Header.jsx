@@ -190,7 +190,7 @@ const Header = () => {
                   {navItems.map((item, index) => (
                     <Link
                       key={index}
-                      className="navItemDesing text-xl navItem block relative cursor-pointer"
+                      className="navItemDesing text-xl navItem block relative cursor-pointer text-white"
                       activeClass="active activeMobile"
                       to={item.link}
                       spy={true}

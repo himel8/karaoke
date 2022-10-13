@@ -6,7 +6,7 @@ import { timeData } from "./categoryData";
 const Category = () => {
   return (
     <section className="py-12" id="times">
-      <h2 className="text-[3.5rem] leading-[4.2rem] sm:text-[6rem] font-title text-title text-center">
+      <h2 className="text-[3.5rem] leading-[4.2rem] sm:text-[6rem] sm:leading-[6.2rem] font-title text-title text-center">
         <FaGlassCheers className="inline mr-2 text-[4rem]" />
         Forfait Chambre
       </h2>

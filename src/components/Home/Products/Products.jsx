@@ -8,7 +8,7 @@ const Products = ({ selected }) => {
       {allProducts.map((data, index) => (
         <div
           key={index}
-          className={`py-20 ${selected === data.id ? "block" : "hidden"}`}
+          className={`py-20 ${selected === data.id ? "hidden" : "hidden"}`}
           id={data.id}
         >
           <h2 className="text-[3.5rem] leading-[4.2rem] sm:text-[6rem] sm:leading-[6.2rem] text-title font-title font-bold text-center tracking-wider mb-4">

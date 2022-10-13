@@ -24,7 +24,7 @@ const ProductCategory = ({ setSelected }) => {
   return (
     <section className="w-[85%] mx-auto py-12" id="ourCategory">
       <h2
-        className="text-[6rem] font-title  text-title text-center capitalize
+        className="text-[3.5rem] leading-[4.2rem] sm:text-[6rem] sm:leading-[6.2rem] font-title  text-title text-center capitalize
       mb-4"
       >
         <FaGlassCheers className="inline mr-2 text-[4rem]" />
