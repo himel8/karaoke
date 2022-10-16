@@ -37,7 +37,7 @@ const Category = () => {
                 key={index}
                 className="bg-heroBg rounded-2xl w-full lg:w-[50%] mx-auto"
               >
-                <div className="bg-hero flex flex-col justify-center items-center px-4 sm:px-12 py-6 gap-4">
+                <div className="bg-hero flex flex-col justify-center items-start lg:items-center px-4 sm:px-12 py-6 gap-4">
                   <h3 className="font-primary text-3xl font-bold text-center text-white">
                     {data.name}
                   </h3>
@@ -47,14 +47,14 @@ const Category = () => {
                   {data.price.map((data, index) => (
                     <div
                       key={index}
-                      className="flex justify-start items-center gap-2 "
+                      className="flex justify-between w-full items-center gap-2"
                     >
                       <BsFillArrowRightCircleFill className="text-xl text-title" />
                       <p className="text-2xl font-text font-bold text-white">
                         {data.name}
                       </p>
 
-                      <hr className="w-20 sm:w-80 border border-dashed border-title" />
+                      <hr className="w-20 sm:w-80 border border-dashed border-title flex-1" />
 
                       <p className="text-2xl font-text font-bold text-white">
                         {data.amount}
